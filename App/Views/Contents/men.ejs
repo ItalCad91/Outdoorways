@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy the best quality products at the lowest price.">
+    <meta name="keywords" content="products, online shopping, discounts">
+    <title>Product Page - ABC Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="mb-4 text-center">Welcome to Outdoorways Men section</h2>
+                    <p class="text-center lead">Discover the best quality products at unbeatable prices. Our online store offers a wide range of products, from fashion and beauty to home and electronics. With fast and reliable shipping, you can shop with confidence and ease. Plus, take advantage of our exclusive discounts and deals. Start shopping now and enjoy the ultimate online shopping experience.</p>
+                </div>
+            </div>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" id="search-item" placeholder="Search for a product" aria-label="Search">
+            <button class="btn" type="submit">Search</button>
+        </form>
+        <main class="container my-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../images/bootsMen.png" alt="Product Image" class="img-fluid product-image">
+                </div>
+                <div class="col-md-6 product">
+                    <h1 class="mb-3 product-name">Hiking Boots</h1>
+                    <p class="text-muted">Durable and comfortable footwear designed for long hikes and uneven terrain, offering ample support and grip for a more secure footing.</p>
+                    <p class="font-weight-bold">$98.00</p>
+                    <div class="d-flex">
+                        <button class="btn btn-primary mr-2" onclick="window.open('https://square.link/u/xcNE70hA', '_blank');">Buy Now</button>
+                        <button class="btn btn-outline-primary"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../images/softshellMen.png" alt="Product Image" class="img-fluid product-image">
+                </div>
+                <div class="col-md-6 product">
+                    <h1 class="mb-3 product-name">Softshell Jacket</h1>
+                    <p class="text-muted">A stretchy and versatile jacket that provides protection from wind, light rain, and moderate temperatures, suitable for a wide range of outdoor activities.</p>
+                    <p class="font-weight-bold">$99.99</p>
+                    <div class="d-flex">
+                        <button class="btn btn-primary mr-2" onclick="window.open('https://square.link/u/PjDDj69L', '_blank');">Buy Now</button>
+                        <button class="btn btn-outline-primary"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../images/Pole.png" alt="Product Image" class="img-fluid product-image">
+                </div>
+                <div class="col-md-6 product">
+                    <h1 class="mb-3 product-name">Trekking Poles</h1>
+                    <p class="text-muted">Adjustable and lightweight poles that provide stability and balance while walking on rugged terrain or steep inclines, reducing the impact on knees and joints.</p>
+                    <p class="font-weight-bold">$35.00</p>
+                    <div class="d-flex">
+                        <button class="btn btn-primary mr-2" onclick="window.open('https://square.link/u/HuuzjD0Z', '_blank');">Buy Now</button>
+                        <button class="btn btn-outline-primary"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../images/hatMen.png" alt="Product Image" class="img-fluid product-image">
+                </div>
+                <div class="col-md-6 product">
+                    <h1 class="mb-3 product-name">Outdoor Trekking Hat</h1>
+                    <p class="text-muted">A wide-brimmed hat with UPF sun protection, designed to shield your face, neck, and shoulders from harmful UV rays while keeping you cool and comfortable.</p>
+                    <p class="font-weight-bold">$9.99</p>
+                    <div class="d-flex">
+                        <button class="btn btn-primary mr-2" onclick="window.open('https://square.link/u/fX3BKclp', '_blank');">Buy Now</button>
+                        <button class="btn btn-outline-primary"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../images/Bottle.png" alt="Product Image" class="img-fluid product-image">
+                </div>
+                <div class="col-md-6 product">
+                    <h1 class="mb-3 product-name">Insulated Camping Water Bottle</h1>
+                    <p class="text-muted">A vacuum-sealed bottle that keeps drinks cold or hot for hours, made of high-quality materials that are resistant to leaks and spills.</p>
+                    <p class="font-weight-bold">$29.99</p>
+                    <div class="d-flex">
+                        <button class="btn btn-primary mr-2" onclick="window.open('https://square.link/u/H3HM2qU6', '_blank');">Buy Now</button>
+                        <button class="btn btn-outline-primary"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <hr>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("form").on("submit", function (e) {
+                e.preventDefault();
+                const searchBox = $("#search-item").val().toUpperCase();
+                const productItems = $(".product");
+
+                productItems.each(function () {
+                    const productName = $(this).find(".product-name").text().toUpperCase();
+                    const productImage = $(this).find(".product-image");
+
+                    if (productName.includes(searchBox)) {
+                        $(this).show();
+                        productImage.show();
+                    } else {
+                        $(this).hide();
+                        productImage.hide();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+<style>
+    .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16m-7 6h7'/%3E%3C/svg%3E");
+}
+
+</style>
