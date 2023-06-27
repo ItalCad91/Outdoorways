@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Buy the best quality products at the lowest price.">
     <meta name="keywords" content="products, online shopping, discounts">
-    <title>Product Page - ABC Store</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
         <div class="container my-5">
@@ -100,32 +95,7 @@
         </main>
         <hr>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("form").on("submit", function (e) {
-                e.preventDefault();
-                const searchBox = $("#search-item").val().toUpperCase();
-                const productItems = $(".product");
-
-                productItems.each(function () {
-                    const productName = $(this).find(".product-name").text().toUpperCase();
-                    const productImage = $(this).find(".product-image");
-
-                    if (productName.includes(searchBox)) {
-                        $(this).show();
-                        productImage.show();
-                    } else {
-                        $(this).hide();
-                        productImage.hide();
-                    }
-                });
-            });
-        });
-    </script>
 </body>
-</html>
 
 
 <style>
@@ -133,3 +103,27 @@
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16m-7 6h7'/%3E%3C/svg%3E");
 }
 </style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("form").on("submit", function (e) {
+            e.preventDefault();
+            const searchBox = $("#search-item").val().toUpperCase();
+            const productItems = $(".product");
+
+            productItems.each(function () {
+                const productName = $(this).find(".product-name").text().toUpperCase();
+                const productImage = $(this).find(".product-image");
+
+                if (productName.includes(searchBox)) {
+                    $(this).show();
+                    productImage.show();
+                } else {
+                    $(this).hide();
+                    productImage.hide();
+                }
+            });
+        });
+    });
+</script>
