@@ -4,7 +4,7 @@ In this project, I built a platform where users can create and manage their own 
 
 ## Demo
 
-![App Screenshot](../images/ecommerce.gif)
+![App Screenshot](./images/ecommerce.gif)
 
 ## Authors
 
